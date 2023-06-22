@@ -1,0 +1,38 @@
+<!-- Kode HTML ini sebagai dasar tampilan web. File CSS dipanggil pada file ini untuk styling, dan JavaScript untuk fungsi konversi suhu. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konversi Suhu</title>
+  <link rel="stylesheet" href="suhu.css">
+</head>
+<body>
+  <h1>Konversi Suhu</h1>
+  <label>Masukkan angka:</label>
+  <input type="number" id="inputAngka" placeholder="Masukkan angka">
+
+  <label>Pilih jenis suhu:</label>
+  <select id="jenisSuhu">
+    <option value="celsius">Celsius</option>
+    <option value="fahrenheit">Fahrenheit</option>
+    <option value="reamur">Reamur</option>
+    <option value="kelvin">Kelvin</option>
+  </select>
+
+  <label>Pilih jenis konversi:</label>
+  <select id="jenisKonversi">
+    <option value="celsius">Celsius</option>
+    <option value="fahrenheit">Fahrenheit</option>
+    <option value="reamur">Reamur</option>
+    <option value="kelvin">Kelvin</option>
+  </select>
+
+  <button onclick="konversiSuhu()">Konversi</button>
+
+  <br>
+  <p id="hasilKonversi"></p>
+  <p id="caraKonversi"></p>
+
+  <script src="suhu.js"></script>
+</body>
+</html>
